@@ -301,7 +301,7 @@ Below we can see a detailed plot of all 7 IMFs, from high to low frequencies, as
 
 
 <p allign = "center">
-     <img src="/photos/ΗΗΤ.png"width = "70%">
+     <img src="/photos/HHT.png"width = "70%">
 </p>
 
 
