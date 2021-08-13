@@ -141,13 +141,13 @@ We are going to proceed with the examination of the effect of the SNR in the exa
 Our new system can bee seen below: 
 
 <p allign = "center">
-     <img src="/photos/9.png"width = "70%">
+     <img src="/photos/9.png"width = "50%">
 </p>
 
 Below we can see all x-estimations using subplot in Matlab. The user can also select to plot them separately through a single interactive menu.
 
 <p allign = "center">
-     <img src="/photos/11.png"width = "70%">
+     <img src="/photos/11.png"width = "95%">
 </p>
 
 
