@@ -58,7 +58,7 @@ For the indirect method:
 4. Obtain the 3-rd order cumulant by averaging r_i(m, n) over all segments
 
    <p allign = "center">
-        <img src="/photos/3.png"width = "50%">
+        <img src="/photos/3.png"width = "42%">
    </p>
 
 Below we can see the 3-rd order cumulant graphically illustrated. 
@@ -70,7 +70,7 @@ Below we can see the 3-rd order cumulant graphically illustrated.
 An MA model has a finite impulse response (FIR) and **Giannakis** was the first to show that the Impulse Response of a qth-order MA system can be calculated just from the system’s output cumulants using the following simple closed-form formula (stated here in terms of third-order cumulants). 
 
 <p allign = "center">
-     <img src="/photos/5.png"width = "50%">
+     <img src="/photos/5.png"width = "45%">
 </p>
 
 Note, this formula requires exact knowledge of MA order q.  It may be impractical from an actual computation point of view because the output cumulant must be estimated, and does not provide any filtering to reduce the effects of cumulant estimation errors. 
@@ -94,12 +94,12 @@ We notice that the result is quite encouraging and that the estimation with Gian
 Using the below formula for the Normalised Root Mean Square Error- NRMSE 
 
 <p allign = "center">
-     <img src="/photos/NRMSE.png"width = "50%">
+     <img src="/photos/NRMSE.png"width = "40%">
 </p>
 where 
 
 <p allign = "center">
-     <img src="/photos/RMSE.png"width = "50%">
+     <img src="/photos/RMSE.png"width = "40%">
 </p>
 
 we get NRMSE=0.1202
@@ -147,7 +147,7 @@ Our new system can bee seen below:
 Below we can see all x-estimations using subplot in Matlab. The user can also select to plot them separately through a single interactive menu.
 
 <p allign = "center">
-     <img src="/photos/10.png"width = "90%">
+     <img src="/photos/10.png"width = "70%">
 </p>
 
 
@@ -155,7 +155,7 @@ Below we can see all x-estimations using subplot in Matlab. The user can also se
 This is the plot of the NRMSE error as a function of SNR: 
 
 <p allign = "center">
-     <img src="/photos/10.png"width = "90%">
+     <img src="/photos/10.png"width = "70%">
 </p>
 
 
