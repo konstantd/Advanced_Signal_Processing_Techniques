@@ -136,7 +136,7 @@ In the below table the NRMSE for each case is summarized after repeating the abo
 
 We can observe from the respective diagrams as well as from the above table that the under-estimation of the q-th order of the system has given the best results from the above experiments. The green  color (under-estimation of q) is quite near to the original signal for all samples in comparison to the yellow (over-estimation of q) which is shifted upwards and lead to a high NRMSE. 
 
-###AWGN
+### AWGN
 
 
 We are going to proceed with the examination of the effect of the SNR in the exact estimation of the order of the system q=5.  We add a source of white Gaussian noise in the output of the system (awgn.m matlab function is used), creating a change in the signal-to-noise ratio (SNR) [30: - 5: -5] dB, i.e., 𝑦𝑖 [𝑘] = 𝑥 [𝑘] + 𝑛𝑖 [𝑘], 𝑖 = 1: 8. We will use again Giannakis formula and estimate the output signals once again. 
