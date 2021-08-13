@@ -147,7 +147,7 @@ Our new system can bee seen below:
 Below we can see all x-estimations using subplot in Matlab. The user can also select to plot them separately through a single interactive menu.
 
 <p allign = "center">
-     <img src="/photos/10.png"width = "70%">
+     <img src="/photos/11.png"width = "70%">
 </p>
 
 
