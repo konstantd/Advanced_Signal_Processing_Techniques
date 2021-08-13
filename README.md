@@ -4,7 +4,7 @@
 
 This repository contains the assignments for the Academic Course "Advanced Signal Processing Techniques" taught in the Spring of 2018-2019 in Aristotle University of Thessaloniki - Electrical & Computer Engineering.  
 
-The aim of 1st the project is the familiarization with **Higher Order Statistics (Spectra)** and **Autoregressive Moving Average (ARMA) ** models.  
+The aim of 1st the project is the familiarization with **Higher Order Statistics (Spectra)** and **Autoregressive Moving Average (ARMA)** models.  
 
 In the 2nd project the following **Time Frequency Analysis (TFA)** techniques are implemented in <ins>ECG (Electrocardiography)</ins> signals:
 
@@ -20,7 +20,7 @@ The differences and advantages of each method were examined and applied to detec
 
 
 
-The aim of 1st the project is the familiarization with **Higher Order Statistics (Spectra)** and **Autoregressive Moving Average (ARMA) ** models. A discrete signal x[k] is created as an output of a q=5th order Moving Average (**MA-5**) process. The coefficients are b=[1.0, 0.93, 0.85, 0.72, 0.59, −0.10].  The input of our linear system is a  non-Gaussian white noise. An exponential distribution with mean value equal to 1 is used in order to create the v[k] signal. 
+The aim of 1st the project is the familiarization with **Higher Order Statistics (Spectra)** and **Autoregressive Moving Average (ARMA)** models. A discrete signal x[k] is created as an output of a q=5th order Moving Average (**MA-5**) process. The coefficients are b=[1.0, 0.93, 0.85, 0.72, 0.59, −0.10].  The input of our linear system is a  non-Gaussian white noise. An exponential distribution with mean value equal to 1 is used in order to create the v[k] signal. 
 
 v=exprnd(1,[1,2048]);
 
@@ -29,7 +29,7 @@ v=exprnd(1,[1,2048]);
 In the below picture, the system is illustrated. 
 
 <p allign = "center">
-     <img src="/photos/1.png"width = "70%">
+     <img src="/photos/1.png"width = "50%">
 </p>
 
 
@@ -46,7 +46,7 @@ For the indirect method:
 3. We obtain an estimate of the third-moment sequence:
 
    <p allign = "center">
-        <img src="/photos/2.png"width = "70%">
+        <img src="/photos/2.png"width = "50%">
    </p>
 
    where i = 1, 2, ..., K 
@@ -58,7 +58,7 @@ For the indirect method:
 4. Obtain the 3-rd order cumulant by averaging r_i(m, n) over all segments
 
    <p allign = "center">
-        <img src="/photos/3.png"width = "70%">
+        <img src="/photos/3.png"width = "60%">
    </p>
 
 Below we can see the 3-rd order cumulant graphically illustrated. 
