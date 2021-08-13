@@ -8,11 +8,9 @@ The aim of 1st the project is the familiarization with **Higher Order Statistics
 
 In the 2nd project the following **Time Frequency Analysis (TFA)** techniques are implemented in <ins>ECG (Electrocardiography)</ins> signals:
 
-- **Short Time Fourier Transform (STFT)**
-
-- **Wavelet Transform (WT)**
-
-- **Hilbert–Huang Transform (HHT) **
+1. Short Time Fourier Transform (**STFT**)
+2. Wavelet Transform (**WT**) with different wavelet families
+3. Hilbert–Huang Transform (**HHT**) with Empirical Mode Mecomposition (EMD) or Ensemble EMD (EEMD)
 
 The differences and advantages of each method were examined and applied to detect different points of interest (PVC or APC beats, isolated beats, sinus arrhythmia and other) for each cardiogram. Furthermore, R-R intervals in Frequency Domain were calculated with HHT method.
 
@@ -22,11 +20,7 @@ The differences and advantages of each method were examined and applied to detec
 
 
 
-The aim of 1st the project is the familiarization with **Higher Order Statistics (Spectra)** and **Autoregressive Moving Average (ARMA) ** models. 
-
-
-
-A discrete signal x[k] is created as an output of a q=5th order Moving Average (**MA-5**) process. The coefficients are b=[1.0, 0.93, 0.85, 0.72, 0.59, −0.10].  The input of our linear system is a  non-Gaussian white noise. An exponential distribution with mean value equal to 1 is used in order to create the v[k] signal. 
+The aim of 1st the project is the familiarization with **Higher Order Statistics (Spectra)** and **Autoregressive Moving Average (ARMA) ** models. A discrete signal x[k] is created as an output of a q=5th order Moving Average (**MA-5**) process. The coefficients are b=[1.0, 0.93, 0.85, 0.72, 0.59, −0.10].  The input of our linear system is a  non-Gaussian white noise. An exponential distribution with mean value equal to 1 is used in order to create the v[k] signal. 
 
 v=exprnd(1,[1,2048]);
 
