@@ -29,7 +29,7 @@ v=exprnd(1,[1,2048]);
 In the below picture, the system is illustrated. 
 
 <p allign = "center">
-     <img src="/photos/1.png"width = "50%">
+     <img src="/photos/1.png"width = "45%">
 </p>
 
 
@@ -58,7 +58,7 @@ For the indirect method:
 4. Obtain the 3-rd order cumulant by averaging r_i(m, n) over all segments
 
    <p allign = "center">
-        <img src="/photos/3.png"width = "60%">
+        <img src="/photos/3.png"width = "50%">
    </p>
 
 Below we can see the 3-rd order cumulant graphically illustrated. 
@@ -70,7 +70,7 @@ Below we can see the 3-rd order cumulant graphically illustrated.
 An MA model has a finite impulse response (FIR) and **Giannakis** was the first to show that the Impulse Response of a qth-order MA system can be calculated just from the system’s output cumulants using the following simple closed-form formula (stated here in terms of third-order cumulants). 
 
 <p allign = "center">
-     <img src="/photos/5.png"width = "70%">
+     <img src="/photos/5.png"width = "50%">
 </p>
 
 Note, this formula requires exact knowledge of MA order q.  It may be impractical from an actual computation point of view because the output cumulant must be estimated, and does not provide any filtering to reduce the effects of cumulant estimation errors. 
@@ -84,7 +84,7 @@ Using the exact order of the system q=5, we estimate the Impulse Response of the
 Below we can see graphically illustrated the estimated output 𝑥_𝑒𝑠𝑡[𝑘] (red) and the original 𝑥_[𝑘] (blue) in the same figure.
 
 <p allign = "center">
-     <img src="/photos/6.png"width = "70%">
+     <img src="/photos/6.png"width = "90%">
 </p>
 
 We notice that the result is quite encouraging and that the estimation with Giannakis formula follows the original signal 𝑥_[𝑘]. The peaks of the estimation are slightly bigger. 
@@ -94,12 +94,12 @@ We notice that the result is quite encouraging and that the estimation with Gian
 Using the below formula for the Normalised Root Mean Square Error- NRMSE 
 
 <p allign = "center">
-     <img src="/photos/NRMSE.png"width = "70%">
+     <img src="/photos/NRMSE.png"width = "50%">
 </p>
 where 
 
 <p allign = "center">
-     <img src="/photos/RMSE.png"width = "70%">
+     <img src="/photos/RMSE.png"width = "50%">
 </p>
 
 we get NRMSE=0.1202
@@ -113,7 +113,7 @@ We will continue our experiments in order to examine the Giannakis' formula with
 **<ins>q'=q-2</ins>**
 
 <p allign = "center">
-     <img src="/photos/7.png"width = "70%">
+     <img src="/photos/7.png"width = "90%">
 </p>
 
 
@@ -121,7 +121,7 @@ We will continue our experiments in order to examine the Giannakis' formula with
 **<ins>q'=q+3</ins>**
 
 <p allign = "center">
-     <img src="/photos/8.png"width = "70%">
+     <img src="/photos/8.png"width = "90%">
 </p>
 
 
@@ -147,7 +147,7 @@ Our new system can bee seen below:
 Below we can see all x-estimations using subplot in Matlab. The user can also select to plot them separately through a single interactive menu.
 
 <p allign = "center">
-     <img src="/photos/10.png"width = "70%">
+     <img src="/photos/10.png"width = "90%">
 </p>
 
 
@@ -155,7 +155,7 @@ Below we can see all x-estimations using subplot in Matlab. The user can also se
 This is the plot of the NRMSE error as a function of SNR: 
 
 <p allign = "center">
-     <img src="/photos/10.png"width = "70%">
+     <img src="/photos/10.png"width = "90%">
 </p>
 
 
@@ -209,7 +209,7 @@ Our goal in choosing signals from the database was to cover a wide range of char
 **Selected ECG** signals and their characteristics below: 
 
 <p allign = "center">
-     <img src="/photos/database.png"width = "70%">
+     <img src="/photos/database.png"width = "90%">
 </p>
 
 
@@ -221,7 +221,7 @@ For demonstrative purposes we will only show some specific points of interest an
 Point of interest, **Premature ventricular contractions (PVC**):
 
 <p allign = "center">
-     <img src="/photos/pvc.png"width = "70%">
+     <img src="/photos/pvc.png"width = "90%">
 </p>
 
 
@@ -229,7 +229,7 @@ Point of interest, **Premature ventricular contractions (PVC**):
 We see the result of the **STFT**, using Hamming window: 
 
 <p allign = "center">
-     <img src="/photos/stft_pvc.png"width = "70%">
+     <img src="/photos/stft_pvc.png"width = "90%">
 </p>
 
 We observe a strong accumulation of energy at very low frequencies - below 5 Hz throughout the duration of the signal. The image below shows the normalized energy in terms of the frequencies involved in an ECG. We confirm that low frequencies contain the maximum energy signal . 
@@ -257,7 +257,7 @@ At this point we will apply the **Wavelet Transform** to examine further which f
 Below we can see the Wavelet Transform of the same signal.
 
 <p allign = "center">
-     <img src="/photos/wavelet_transform.png"width = "70%">
+     <img src="/photos/wavelet_transform.png"width = "90%">
 </p>
 
 The signal results from the sum of the approximation and the detailed levels. The signal decomposes into different frequency bands. We chose 6 levels (6 detailed coefficients). The more levels the more different bands. The resulting frequencies for each diagram follow the Niquist criterion . The lower diagrams determine the finer details as they represent higher frequencies as shown right in the image in the red font. The amplitude of the last  diagram [high frequency] is quite small, it is basically noise and can be ignored. This is another advantage of the Wavelet Transform, which is widely used in signal denoising on cardiograms. We can observe an unusual activity in time that PVC takes place, with significant width in the approximation level, ie in the band of (0 - 5.62 Hz) and in the first 2 levels with a smaller width. That is, we have participation of the frequencies of the 3rd first diagrams with the most intense the 1st band. The higher level that we choose to decompose our signal and split it into different freq. bands, the finer resolution in frequency we get with the Wavelet Transform, which has a lot to offer in signal processing.
@@ -275,7 +275,7 @@ We will apply the Wavelet Transform again for the PVC point of interest, this ti
 The result for 6 Level WT can be seen below. 
 
 <p allign = "center">
-     <img src="/photos/wavelet_transform_2.png"width = "70%">
+     <img src="/photos/wavelet_transform_2.png"width = "90%">
 </p>
 
 
