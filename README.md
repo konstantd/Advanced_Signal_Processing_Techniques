@@ -39,7 +39,7 @@ We will continue with the estimation of the the 3rd order cumulant. In order to 
 
 For the indirect method:
 
-1. That means that we segment the data into K records of M samples each, i.e., N = KM.
+1. We segment the data into K records of M samples each, i.e., N = KM.
 
 2.  After that we subtract the average value of each record.
 
@@ -53,7 +53,7 @@ For the indirect method:
 
    s1 = max(0, -m, -n)
 
-   s2 = min(M - 1, M - 1 -m, M - 1 -n)
+   s2 = min(M-1, M-1-m, M-1-n)
 
 4. Obtain the 3-rd order cumulant by averaging r_i(m, n) over all segments
 
@@ -66,6 +66,8 @@ Below we can see the 3-rd order cumulant graphically illustrated.
 <p allign = "center">
      <img src="/photos/4.png"width = "70%">
 </p>
+
+### Giannakis Formula
 
 An MA model has a finite impulse response (FIR) and **Giannakis** was the first to show that the Impulse Response of a qth-order MA system can be calculated just from the system’s output cumulants using the following simple closed-form formula (stated here in terms of third-order cumulants). 
 
@@ -310,7 +312,7 @@ It is worth mentioning that in the detailed plots of the IMFs, the one that seem
 
 
 
-#### RR Intervals in Frequency Domain
+### RR Intervals in Frequency Domain
 
 
 
